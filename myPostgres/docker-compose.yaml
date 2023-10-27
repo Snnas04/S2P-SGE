@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+  mysql:
+    image: mysql
+    ports:
+      - 3307:3306
+    volumes:
+      - ./mysqlData:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=CalaClara21.
+      - MYSQL_DATABASE=proves
+      - MYSQL_USER=snnas04
+      - MYSQL_PASSWORD=CalaClara21.
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: CalaClara21.
+    volumes:
+      - ./postgresData:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
