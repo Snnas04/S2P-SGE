@@ -1,0 +1,7 @@
+version: '3'
+services:
+  ubuntu-server:
+    image: ubuntu:22.04
+    container_name: UbuntuServer
+    command: tail -f /dev/null
+    restart: always
